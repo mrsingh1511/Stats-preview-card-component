@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: hsl(233, 47%, 7%);
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    
+  }
+  
+  main{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+      font-size: 15px;
+      align-items: center;
+      color: hsla(0, 0%, 100%, 0.75);
+  }
+  .Product-card{
+    width: 1080px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: hsl(244, 38%, 16%);
+
+  }
+  .product-img{
+    position: relative;
+  }
+  .product-img::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: hsla(277, 64%, 61%, 0.6);
+    z-index: 1;
+  }
+  .Desktop-img{
+      height: 100%;
+  }
+  .Mobile-img{
+    height: 100%;
+      display: none;
+  }
+  .title{
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+  }
+  .title span{
+    color: hsl(277, 64%, 61%);
+  }
+  .discription{
+      margin-top: 20px;
+      line-height: 1.5;
+
+  }
+  .content{
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .stats{
+    display: flex;
+    margin-top: 40px;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  .stat-eliment{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-right: 60px;
+    letter-spacing: 1px;
+  }
+  .stat-eliment span{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+  }
+
+  @media only screen and (max-width: 768px){
+      .Product-card{
+          width: 375px;
+      }
+      .Mobile-img{
+          display: block;
+      }
+      .Desktop-img{
+          display: none;
+      }
+      .title{
+          text-align: center;
+          font-size: 30px;
+      }
+      .discription{
+        text-align: center;
+      }
+      .content{
+        padding: 40px;
+    }
+    .stats{
+        display: block;
+        margin: 0 auto;
+    }
+    .stat-eliment{
+        padding: 10px 0;
+        text-align: center;
+    }
+  }
